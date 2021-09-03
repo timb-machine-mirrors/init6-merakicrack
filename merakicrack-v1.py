@@ -1,4 +1,5 @@
 from itertools import permutations
+import time
 
 
 def run():
@@ -6,6 +7,7 @@ def run():
     BAD_NUM_PATTERNS = {x * 2 for x in '123456789'}
 
     count = 0
+    start_time = time.time()
 
     for x in permutations('Q1W5ERT3YUI2P8AS4DFGH6JKLZXCV7B9NM', r=8):
         first_half = ''.join(x[:4])
@@ -26,9 +28,12 @@ def run():
         count += 1
 
         if count % 100000 == 0:
-            print('count: {} -  Q2AZ-{}-{}'.format(count, first_half, second_half))
+            print('count: {} -  Q2AZ-{}-{}'.format(
+                count, first_half, second_half))
 
-    print(count)
+    end_time = time.time()
+    print('Total username count: {}\nStart Time: {}\nEnd Time: {}'.format(
+        count, start_time, end_time))
 
 
 if __name__ == '__main__':
