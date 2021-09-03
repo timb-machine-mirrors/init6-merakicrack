@@ -13,12 +13,16 @@ A quick google search discovered this site https://community.meraki.com/t5/Secur
 Next wanted to find some sample serial numbers. Went to ebay as one does.
 
 Samples pulled from ebay pictures:
+
+```
 Q2JN-RQQH-QFMR
 Q2JN-2Y9Y-AERC
 Q2JN-S5WX-HEUY
 Q2JN-2C7P-X2GP
 Q2JN-YYM8-8HJT
 Q2JN-8UBL-S2KA?
+```
+
 
 With the minimal data set I made the following assumptions:
 
@@ -34,6 +38,17 @@ Because the same numbers don't repeat in a grouping but do repeat across the gro
 I created two scripts and ran them to see there was any improvement independently processing the two groups. (not smart enough to do the math)
 
 
+
+I think having more samples will help create some new assumptions. I'll be collecting them for each model. I'll create files for each one that way people can do pull request to help contribute. 
+
+# TODO
+
+* Find [shodan](https://shodan.io/) queries
+* Collect way more samples for all models
+* If it's looking like it might work, start the fun stuff, Thread it and create the online cracker. 
+
+
+Finial note, i'm pretty sure this project is going to fail. 
 
 # Serial Number to Model Number Table
 
